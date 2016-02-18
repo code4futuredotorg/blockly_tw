@@ -10,6 +10,7 @@
 <find_panel_settings/>
 <vnodes>
 <v t="amd.20160218160251.1"><vh>@edit index.html</vh></v>
+<v t="amd.20160218161056.1"><vh>@edit test.html</vh></v>
 </vnodes>
 <tnodes>
 </tnodes>

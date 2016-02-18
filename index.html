@@ -47,13 +47,14 @@
 <script type="text/python3" id="tests_editor">
 from browser import document as doc, window
 from browser import html
-import header
+#import header
 import editor
 
-qs_lang,language = header.show('../')
+#qs_lang,language = header.show('../')
 
 # other translations
 
+'''
 trans = {
     'report_bugs':{'en':'Please report bugs in the ',
                    'es':'Poner los bugs en el ',
@@ -66,7 +67,7 @@ trans = {
 for key in trans:
     if key in doc:
         doc[key].html = trans[key].get(language,trans[key]['en'])
-
+'''
 # link to test page
 tplink = doc['test_page']
 if qs_lang:
@@ -130,12 +131,6 @@ function run_js(){
 </script>
 </head>
 <body onload="brython({debug:1, cache:'version'})">
-
-<table id=banner cellpadding=0 cellspacing=0>
-<tr id=banner_row >
-<td class="logo"><a href="../index.html"><img src="../brython.png" class="logo"></a></td>
-</tr>
-</table>
 
 <div id="main_container"></div>
 

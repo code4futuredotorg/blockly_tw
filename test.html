@@ -18,7 +18,7 @@
 <script type="text/javascript" src="js/brython/py_object.js"></script>
 <script type="text/javascript" src="js/brython/py_type.js"></script>
 <script type="text/javascript" src="js/brython/py_utils.js"></script>
-<script type="text/javascript" src=".js/brython/py_builtin_functions.js"></script>
+<script type="text/javascript" src="js/brython/py_builtin_functions.js"></script>
 <script type="text/javascript" src="js/brython/py_exceptions.js"></script>
 <script type="text/javascript" src="js/brython/py_range_slice.js"></script>
 <script type="text/javascript" src="js/brython/py_bytes.js"></script>
@@ -150,10 +150,10 @@ doc['set_loop_timeout'].bind('change',set_loop_timeout)
 
 <script type="text/python3" id="translations">
 from browser import document as doc
-import header
-qs_lang,language = header.show('../')
+#import header
+#qs_lang,language = header.show('../')
 # other translations
-
+'''
 trans = {
     'report_bugs':{'en':'Please report bugs in the ',
                    'es':'Poner los bugs en el ',
@@ -167,17 +167,12 @@ trans = {
 for key in trans:
     if key in doc:
         doc[key].html = trans[key][language]
+'''
 </script>
 
 </head>
 
 <body onload="brython({debug:1, cache:'none', static_stdlib_import:true})">
-
-<table id=banner cellpadding=0 cellspacing=0>
-<tr id=banner_row >
-<td class="logo"><a href="../index.html"><img src="../brython.png" class="logo"></a></td>
-</tr>
-</table>
 
 <div style="text-align:center">
 <br>Brython version: <span id="version"></span>
