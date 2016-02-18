@@ -148,28 +148,6 @@ doc['files'].bind('change',editor.load_script)
 doc['set_loop_timeout'].bind('change',set_loop_timeout)
 </script>
 
-<script type="text/python3" id="translations">
-from browser import document as doc
-#import header
-#qs_lang,language = header.show('../')
-# other translations
-'''
-trans = {
-    'report_bugs':{'en':'Please report bugs in the ',
-                   'es':'Poner los bugs en el ',
-                   'fr':"Signalez les bugs dans l'"},
-    'test_page':{'en':'Tests page','es':'Página de pruebas','fr':'Page de tests'},
-    'run':{'en':'run','es':'ejecutar','fr':'exécuter'},
-    'clear':{'en':'clear','es':'borrar','fr':'effacer'}
-}
-
-
-for key in trans:
-    if key in doc:
-        doc[key].html = trans[key][language]
-'''
-</script>
-
 </head>
 
 <body onload="brython({debug:1, cache:'none', static_stdlib_import:true})">
